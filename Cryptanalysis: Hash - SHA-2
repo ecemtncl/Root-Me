@@ -1,0 +1,9 @@
+96719db60d8e3f498c98d94155e1296aac105ck4923290c89eeeb3ba26d3eef92
+
+Bizim çözmemizi istedikleri şifre bu. Başlıktanda anlaşıldığı üzere SHA-2 tipinde şifrelenmiş. Ancak dikkat ememiz gereken çok önemli bir yer var.
+SHA-2 şifrelemesi f harfine kadar devam eder. Ancak bu sorunun içerisinde gizlenmiş bir 'k' harfi var. Onu silip çevirmemiz gerekiyor aksi
+takdirde cevap çıkmıyor.
+Bir önceki çözümünde kullandığım siteyi kullandım yine: https://crackstation.net/
+Şifremiz :4dM1n Ancak henüz bitmedi. Bunu da tekrar çözdüğümüzde bize asıl sonucu verecek.
+SHA-1 e çevimek için kullandığım site:https://md5hashing.net/hash/sha1/a7c9d5a37201c08c5b7b156173bea5ec2063edf9
+Asıl şifremiz: a7c9d5a37201c08c5b7b156173bea5ec2063edf9
