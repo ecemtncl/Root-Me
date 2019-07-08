@@ -1,0 +1,132 @@
+4C6520666C6167206465206365206368616C6C656E6765206573743A203261633337363438316165353436636436383964356239313237356433323465
+
+Start the challenge ' a bastığımızda bize böyle bir şifre veriyor. Bu şifre Hexadecimal olarak kodlanmış bir şifredir. 
+ASCII             	Hexadecimal	
+null	                    0
+start of header 	        1	
+start of text	            2	                          Hexadecimal ASCII tablosu yandadır. 
+end of text	              3	             Verilen şifreyi ikişer karakter olmak üzere ayırdığımızda 
+end of transmission       4	                karşılık gelen karakterleri yazarak şifreyi çözebiliriz.
+enquire                   5	          Alternatif olarak: http://www.convertstring.com/tr/EncodeDecode/HexDecode sitesine bize verilen 
+acknowledge	              6	          kodu yapıştırdığınızda otomatik olarak şifreyi çözecektir.
+bell	                    7	          Şifremiz: Le flag de ce challenge est: 2ac376481ae546cd689d5b91275d324e
+backspace	                8	
+horizontal tab	          9
+linefeed	                A
+vertical tab	            B
+form feed	                C	
+carriage return	          D	
+shift out	                E	
+shift in                  F	
+data link escape          10
+device control 1/Xon	    11	
+device control 2          12	
+device control 3/Xoff     13
+device control 4          14
+negative acknowledge      15
+synchronous idle          16
+end of transmission block 17
+cancel	                  18
+end of medium             19
+end of file/ substitute   1A
+escape                    1B
+file separator            1C
+group separator	          1D
+record separator	        1E
+unit separator	          1F
+space	                    20
+!	                        21
+"	                        22
+#	                        23
+$	                        24
+%	                        25
+&	                        26
+'	                        27
+(	                        28
+)	                        29
+*	                        2A
++	                        2B
+,	                        2C
+-	                        2D
+.	                        2E
+/	                        2F
+0	                        30
+1	                        31
+2	                        32	
+3	                        33
+4	                        34
+5	                        35
+6	                        36
+7	                        37
+8	                        38
+9	                        39
+:	                        3A
+;	                        3B
+<	                        3C
+=	                        3D
+>	                        3E
+?	                        3F
+@	                        40
+A	                        41
+B	                        42
+C	                        43
+D	                        44
+E	                        45
+F	                        46
+G	                        47
+H	                        48
+I	                        49
+J	                        4A
+K	                        4B
+L	                        4C
+M	                        4D
+N	                        4E
+O	                        4F
+P	                        50
+Q	                        51
+R	                        52
+S	                        53
+T	                        54
+U	                        55
+V	                        56
+W	                        57
+X	                        58
+Y	                        59
+Z	                        5A
+[	                        5B
+\	                        5C
+]	                        5D
+^	                        5E
+_	                        5F
+`	                        60
+a	                        61
+b	                        62
+c	                        63
+d	                        64
+e	                        65
+f	                        66
+g	                        67
+h	                        68
+i	                        69
+j	                        6A
+k	                        6B
+l	                        6C
+m	                        6D
+n	                        6E
+o	                        6F
+p	                        70
+q	                        71
+r	                        72
+s	                        73
+t	                        74
+u	                        75
+v	                        76
+w	                        77
+x	                        78
+y	                        79
+z	                        7A
+{	                        7B
+|	                        7C
+}	                        7D
+~	                        7E
+DEL	                      7F
